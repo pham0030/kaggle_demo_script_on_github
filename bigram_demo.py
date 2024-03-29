@@ -8,15 +8,15 @@ function2()
 
 # hyperparameters
 batch_size = 64  # how many independent sequences to train on in parallel ?
-block_size = 256  # what is the maximum context length for predictions ?
+block_size = 512  # what is the maximum context length for predictions ?
 max_iters = 5000
-eval_interval = 500
+eval_interval = 1000
 learning_rate = 3e-04
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 eval_iters = 200
-n_embed = 384
-n_head = 6
-n_layer = 6
+n_embed = 512
+n_head = 32
+n_layer = 12
 dropout = 0.2
 # -------------
 
