@@ -1,6 +1,10 @@
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+from script1 import function1
+function1()
+from script2 import function2
+function2()
 
 # hyperparameters
 batch_size = 64  # how many independent sequences to train on in parallel ?
